@@ -52,6 +52,8 @@ public class FragmentVideosInformacoes extends BaseFragment {
                     youTubePlayer.setPlayerStyle(YouTubePlayer.PlayerStyle.DEFAULT);
                     youTubePlayer.loadVideo(VIDEO_ID);
                     youTubePlayer.play();
+
+                    // THE PLAYER CRASHES AFTER RETURN FROM FULLSCREEN
                 }
             }
 
