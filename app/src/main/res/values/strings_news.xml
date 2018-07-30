@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="data1">1/07/2018  7:50</string>
+    <string name="data2">18/06/2018  7:45</string>
+    <string name="data3">7/05/2018  14:12</string>
+    <string name="data4">23/04/2018  11:20</string>
+    <string name="data5">17/03/2018  10:37</string>
+    <string name="data6">26/02/2018  17:30</string>
+    <string name="data7">03/01/2018  07:10</string>
+    <string name="data8">19/12/2017  15:17</string>
+    <string name="data9">22/11//2017  17:02</string>
+    <string name="data10">12/10/2017  9:42</string>
+
+    <string-array name="array_datas">
+        <item>@string/data1</item>
+        <item>@string/data2</item>
+        <item>@string/data3</item>
+        <item>@string/data4</item>
+        <item>@string/data5</item>
+        <item>@string/data6</item>
+        <item>@string/data7</item>
+        <item>@string/data8</item>
+        <item>@string/data9</item>
+        <item>@string/data10</item>
+    </string-array>
+
+    <string name="news_desc1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean felis lectus, tincidunt et tincidunt non, ultricies fermentum sapien.</string>
+    <string name="news_desc2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean felis lectus, tincidunt et tincidunt non, ultricies fermentum sapien.</string>
+    <string name="news_desc3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean felis lectus, tincidunt et tincidunt non, ultricies fermentum sapien.</string>
+    <string name="news_desc4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean felis lectus, tincidunt et tincidunt non, ultricies fermentum sapien.</string>
+    <string name="news_desc5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean felis lectus, tincidunt et tincidunt non, ultricies fermentum sapien.</string>
+    <string name="news_desc6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean felis lectus, tincidunt et tincidunt non, ultricies fermentum sapien.</string>
+    <string name="news_desc7">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean felis lectus, tincidunt et tincidunt non, ultricies fermentum sapien.</string>
+    <string name="news_desc8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean felis lectus, tincidunt et tincidunt non, ultricies fermentum sapien.</string>
+    <string name="news_desc9">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean felis lectus, tincidunt et tincidunt non, ultricies fermentum sapien.</string>
+    <string name="news_desc10">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean felis lectus, tincidunt et tincidunt non, ultricies fermentum sapien.</string>
+
+    <string-array name="array_news_descricoes">
+        <item>@string/news_desc1</item>
+        <item>@string/news_desc2</item>
+        <item>@string/news_desc3</item>
+        <item>@string/news_desc4</item>
+        <item>@string/news_desc5</item>
+        <item>@string/news_desc6</item>
+        <item>@string/news_desc7</item>
+        <item>@string/news_desc8</item>
+        <item>@string/news_desc9</item>
+        <item>@string/news_desc10</item>
+    </string-array>
+</resources>

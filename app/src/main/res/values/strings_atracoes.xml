@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="artista1">Artista 1</string>
+    <string name="artista2">Artista 2</string>
+    <string name="artista3">Artista 3</string>
+    <string name="artista4">Artista 4</string>
+    <string name="artista5">Artista 5</string>
+    <string name="artista6">Artista 6</string>
+    <string name="artista7">Artista 7</string>
+    <string name="artista8">Artista 8</string>
+    <string name="artista9">Artista 9</string>
+    <string name="artista10">Artista 10</string>
+    <string name="artista11">Artista 11</string>
+
+    <string-array name="atracoes">
+        <item>@string/artista1</item>
+        <item>@string/artista2</item>
+        <item>@string/artista3</item>
+        <item>@string/artista4</item>
+        <item>@string/artista5</item>
+        <item>@string/artista6</item>
+        <item>@string/artista7</item>
+        <item>@string/artista8</item>
+        <item>@string/artista9</item>
+        <item>@string/artista10</item>
+        <item>@string/artista11</item>
+    </string-array>
+
+    <string name="descricao1">Descrição do artista 1</string>
+    <string name="descricao2">Descrição do artista 2</string>
+    <string name="descricao3">Descrição do artista 3</string>
+    <string name="descricao4">Descrição do artista 4</string>
+    <string name="descricao5">Descrição do artista 5</string>
+    <string name="descricao6">Descrição do artista 6</string>
+    <string name="descricao7">Descrição do artista 7</string>
+    <string name="descricao8">Descrição do artista 8</string>
+    <string name="descricao9">Descrição do artista 9</string>
+    <string name="descricao10">Descrição do artista 10</string>
+    <string name="descricao11">Descrição do artista 11</string>
+
+    <string-array name="descricoes">
+        <item>@string/descricao1</item>
+        <item>@string/descricao2</item>
+        <item>@string/descricao3</item>
+        <item>@string/descricao4</item>
+        <item>@string/descricao5</item>
+        <item>@string/descricao6</item>
+        <item>@string/descricao7</item>
+        <item>@string/descricao8</item>
+        <item>@string/descricao9</item>
+        <item>@string/descricao10</item>
+        <item>@string/descricao11</item>
+    </string-array>
+
+</resources>

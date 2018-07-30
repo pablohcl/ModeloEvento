@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="video1">Vídeo do local</string>
+    <string name="video2">Vídeo da atração 1</string>
+    <string name="video3">Vídeo da decoração</string>
+    <string name="video4">Vídeo da atração 2</string>
+    <string name="video5">Vídeo da estrutura</string>
+
+    <string-array name="array_videos">
+        <item>@string/video1</item>
+        <item>@string/video2</item>
+        <item>@string/video3</item>
+        <item>@string/video4</item>
+        <item>@string/video5</item>
+    </string-array>
+
+    <string name="descricao_video1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean felis lectus, tincidunt et tincidunt non, ultricies fermentum sapien. Fusce interdum, est ac dignissim imperdiet, nibh nunc convallis lorem, et interdum mi justo vitae lorem. Aenean eget accumsan nisi, eget pharetra odio. Vivamus a sem arcu. Morbi bibendum erat dui, id vulputate leo egestas in. Praesent auctor pellentesque odio, ut tincidunt ante eleifend ut. Duis accumsan at sapien vitae finibus. Integer vestibulum sit amet augue in euismod. Integer at pharetra nisi, quis posuere urna. Sed euismod, purus nec aliquet aliquam, nisi ligula eleifend augue, quis egestas ligula leo non leo. Vestibulum efficitur nunc iaculis mi tempus iaculis. Proin eu lectus nec velit elementum pharetra. Proin vehicula mattis tempor. Donec vel nulla turpis. Donec sollicitudin leo vitae magna dictum, a ultricies metus iaculis.</string>
+    <string name="descricao_video2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean felis lectus, tincidunt et tincidunt non, ultricies fermentum sapien. Fusce interdum, est ac dignissim imperdiet, nibh nunc convallis lorem, et interdum mi justo vitae lorem. Aenean eget accumsan nisi, eget pharetra odio. Vivamus a sem arcu. Morbi bibendum erat dui, id vulputate leo egestas in. Praesent auctor pellentesque odio, ut tincidunt ante eleifend ut. Duis accumsan at sapien vitae finibus. Integer vestibulum sit amet augue in euismod. Integer at pharetra nisi, quis posuere urna. Sed euismod, purus nec aliquet aliquam, nisi ligula eleifend augue, quis egestas ligula leo non leo. Vestibulum efficitur nunc iaculis mi tempus iaculis. Proin eu lectus nec velit elementum pharetra. Proin vehicula mattis tempor. Donec vel nulla turpis. Donec sollicitudin leo vitae magna dictum, a ultricies metus iaculis.</string>
+    <string name="descricao_video3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean felis lectus, tincidunt et tincidunt non, ultricies fermentum sapien. Fusce interdum, est ac dignissim imperdiet, nibh nunc convallis lorem, et interdum mi justo vitae lorem. Aenean eget accumsan nisi, eget pharetra odio. Vivamus a sem arcu. Morbi bibendum erat dui, id vulputate leo egestas in. Praesent auctor pellentesque odio, ut tincidunt ante eleifend ut. Duis accumsan at sapien vitae finibus. Integer vestibulum sit amet augue in euismod. Integer at pharetra nisi, quis posuere urna. Sed euismod, purus nec aliquet aliquam, nisi ligula eleifend augue, quis egestas ligula leo non leo. Vestibulum efficitur nunc iaculis mi tempus iaculis. Proin eu lectus nec velit elementum pharetra. Proin vehicula mattis tempor. Donec vel nulla turpis. Donec sollicitudin leo vitae magna dictum, a ultricies metus iaculis.</string>
+    <string name="descricao_video4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean felis lectus, tincidunt et tincidunt non, ultricies fermentum sapien. Fusce interdum, est ac dignissim imperdiet, nibh nunc convallis lorem, et interdum mi justo vitae lorem. Aenean eget accumsan nisi, eget pharetra odio. Vivamus a sem arcu. Morbi bibendum erat dui, id vulputate leo egestas in. Praesent auctor pellentesque odio, ut tincidunt ante eleifend ut. Duis accumsan at sapien vitae finibus. Integer vestibulum sit amet augue in euismod. Integer at pharetra nisi, quis posuere urna. Sed euismod, purus nec aliquet aliquam, nisi ligula eleifend augue, quis egestas ligula leo non leo. Vestibulum efficitur nunc iaculis mi tempus iaculis. Proin eu lectus nec velit elementum pharetra. Proin vehicula mattis tempor. Donec vel nulla turpis. Donec sollicitudin leo vitae magna dictum, a ultricies metus iaculis.</string>
+    <string name="descricao_video5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean felis lectus, tincidunt et tincidunt non, ultricies fermentum sapien. Fusce interdum, est ac dignissim imperdiet, nibh nunc convallis lorem, et interdum mi justo vitae lorem. Aenean eget accumsan nisi, eget pharetra odio. Vivamus a sem arcu. Morbi bibendum erat dui, id vulputate leo egestas in. Praesent auctor pellentesque odio, ut tincidunt ante eleifend ut. Duis accumsan at sapien vitae finibus. Integer vestibulum sit amet augue in euismod. Integer at pharetra nisi, quis posuere urna. Sed euismod, purus nec aliquet aliquam, nisi ligula eleifend augue, quis egestas ligula leo non leo. Vestibulum efficitur nunc iaculis mi tempus iaculis. Proin eu lectus nec velit elementum pharetra. Proin vehicula mattis tempor. Donec vel nulla turpis. Donec sollicitudin leo vitae magna dictum, a ultricies metus iaculis.</string>
+
+    <string-array name="array_descricoes_videos">
+        <item>@string/descricao_video1</item>
+        <item>@string/descricao_video2</item>
+        <item>@string/descricao_video3</item>
+        <item>@string/descricao_video4</item>
+        <item>@string/descricao_video5</item>
+    </string-array>
+</resources>
