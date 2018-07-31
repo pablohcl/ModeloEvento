@@ -25,7 +25,7 @@ public class FragmentVideosInformacoes extends BaseFragment {
     private static final String API_KEY = Config.YOUTUBE_API_KEY;
 
     // YoutTube video
-    public static String VIDEO_ID = "24QmQfPCsgQ";
+    public static String VIDEO_ID = "3PjAbARdYog";
 
     public FragmentVideosInformacoes() {
     }

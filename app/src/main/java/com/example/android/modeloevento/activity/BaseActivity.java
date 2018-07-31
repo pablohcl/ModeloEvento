@@ -175,7 +175,7 @@ public class BaseActivity extends AppCompatActivity {
 
             case R.id.action_video_open_browser:
                 Intent intentVideo = new Intent(Intent.ACTION_VIEW);
-                intentVideo.setData(Uri.parse("https://www.youtube.com/"+ FragmentVideosInformacoes.VIDEO_ID));
+                intentVideo.setData(Uri.parse("https://www.youtube.com/watch?v="+ FragmentVideosInformacoes.VIDEO_ID));
                 startActivity(intentVideo);
                 break;
         }
