@@ -49,11 +49,9 @@ public class FragmentVideosInformacoes extends BaseFragment {
             @Override
             public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer youTubePlayer, boolean b) {
                 if(!b){
-                    youTubePlayer.setPlayerStyle(YouTubePlayer.PlayerStyle.DEFAULT);
+                    youTubePlayer.setPlayerStyle(YouTubePlayer.PlayerStyle.MINIMAL); // THIS STYLE DISABLES FULLSCREEN BUTTON
                     youTubePlayer.loadVideo(VIDEO_ID);
                     youTubePlayer.play();
-
-                    // THE PLAYER CRASHES AFTER RETURN FROM FULLSCREEN
                 }
             }
 
