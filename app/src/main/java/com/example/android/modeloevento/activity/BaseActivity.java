@@ -31,6 +31,7 @@ import com.example.android.modeloevento.fragments.FragmentNews;
 import com.example.android.modeloevento.fragments.FragmentSetores;
 import com.example.android.modeloevento.fragments.FragmentTickets;
 import com.example.android.modeloevento.fragments.FragmentVideos;
+import com.example.android.modeloevento.fragments.FragmentVideosInformacoes;
 import com.google.android.youtube.player.YouTubeBaseActivity;
 
 import java.util.ArrayList;
@@ -162,13 +163,21 @@ public class BaseActivity extends AppCompatActivity {
                 // Trata o clique no botão que abre o menu
                 if(drawerLayout != null){
                     openDrawer();
-                    return true;
+                    break;
                 }
+                break;
 
             case R.id.action_open_browser:
                 Intent intent = new Intent(Intent.ACTION_VIEW);
                 intent.setData(Uri.parse("https://www.instagram.com/aztec.festival/"));
                 startActivity(intent);
+                break;
+
+            case R.id.action_video_open_browser:
+                Intent intentVideo = new Intent(Intent.ACTION_VIEW);
+                intentVideo.setData(Uri.parse("https://www.youtube.com/"+ FragmentVideosInformacoes.VIDEO_ID));
+                startActivity(intentVideo);
+                break;
         }
         return super.onOptionsItemSelected(item);
     }

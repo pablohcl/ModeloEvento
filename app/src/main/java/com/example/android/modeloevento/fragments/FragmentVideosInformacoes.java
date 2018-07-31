@@ -7,6 +7,8 @@ import android.support.annotation.Nullable;
 import android.support.v4.app.FragmentTransaction;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
@@ -23,7 +25,7 @@ public class FragmentVideosInformacoes extends BaseFragment {
     private static final String API_KEY = Config.YOUTUBE_API_KEY;
 
     // YoutTube video
-    private static String VIDEO_ID = "24QmQfPCsgQ";
+    public static String VIDEO_ID = "24QmQfPCsgQ";
 
     public FragmentVideosInformacoes() {
     }
@@ -37,8 +39,15 @@ public class FragmentVideosInformacoes extends BaseFragment {
     }
 
     @Override
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+        inflater.inflate(R.menu.videos_informacoes_menu_bar, menu);
+    }
+
+    @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
+
+        setHasOptionsMenu(true);
 
         YouTubePlayerSupportFragment youTubePlayerSupportFragment = YouTubePlayerSupportFragment.newInstance();
 
