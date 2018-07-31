@@ -16,6 +16,7 @@ import android.widget.Toast;
 import com.example.android.modeloevento.R;
 import com.example.android.modeloevento.activity.BaseActivity;
 import com.example.android.modeloevento.adapter.AtracoesAdapter;
+import com.example.android.modeloevento.adapter.LojaAdapter;
 import com.example.android.modeloevento.adapter.NewsAdapter;
 import com.example.android.modeloevento.adapter.SetoresAdapter;
 import com.example.android.modeloevento.adapter.TicketsAdapter;
@@ -59,6 +60,11 @@ public class BaseFragment extends Fragment {
     protected ArrayList<String> descricoesVideos;
     private VideosAdapter videosAdapter;
     private RecyclerView rvVideos;
+
+    private String[] stringsItensLoja, stringsDescItensLoja, stringsPrecosItensLoja;
+    protected ArrayList<String> itensLoja, descItensLoja, precosItensLoja;
+    private LojaAdapter lojaAdapter;
+    private RecyclerView rvLoja;
 
     protected void getAtracoes(){
         atracoesStrings = getActivity().getResources().getStringArray(R.array.atracoes);
@@ -241,6 +247,37 @@ public class BaseFragment extends Fragment {
                 ft.replace(R.id.frag_layout, fragmentVideosInformacoes, "FRAG VIDEOS INFORMACOES");
                 ft.addToBackStack(null);
                 ft.commit();
+            }
+        };
+    }
+
+    protected void getItensLoja(){
+        stringsItensLoja = getActivity().getResources().getStringArray(R.array.array_itens_loja);
+        stringsDescItensLoja = getActivity().getResources().getStringArray(R.array.array_loja_desc);
+        stringsPrecosItensLoja = getActivity().getResources().getStringArray(R.array.array_loja_precos);
+        itensLoja = new ArrayList<>();
+        descItensLoja = new ArrayList<>();
+        precosItensLoja = new ArrayList<>();
+        for(int i = 0; i < stringsItensLoja.length; i++){
+            itensLoja.add(stringsItensLoja[i]);
+            descItensLoja.add(stringsDescItensLoja[i]);
+            precosItensLoja.add(stringsPrecosItensLoja[i]);
+        }
+    }
+
+    protected void setItensLoja(){
+        rvLoja = (RecyclerView) getActivity().findViewById(R.id.rv_loja);
+        lojaAdapter = new LojaAdapter(getActivity(), itensLoja, descItensLoja, precosItensLoja, onClickLoja());
+        rvLoja.setAdapter(lojaAdapter);
+        rvLoja.setHasFixedSize(true);
+        rvLoja.setLayoutManager(new LinearLayoutManager(getActivity(), LinearLayoutManager.VERTICAL, false));
+    }
+
+    protected LojaAdapter.LojaOnClickListener onClickLoja(){
+        return new LojaAdapter.LojaOnClickListener() {
+            @Override
+            public void onClickLoja(View view, int position) {
+                // DO SOMETHING HERE.
             }
         };
     }

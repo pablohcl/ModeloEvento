@@ -27,6 +27,7 @@ import com.example.android.modeloevento.fragments.FragmentAtracoes;
 import com.example.android.modeloevento.fragments.FragmentEstrutura;
 import com.example.android.modeloevento.fragments.FragmentEvento;
 import com.example.android.modeloevento.fragments.FragmentInstagram;
+import com.example.android.modeloevento.fragments.FragmentLoja;
 import com.example.android.modeloevento.fragments.FragmentNews;
 import com.example.android.modeloevento.fragments.FragmentSetores;
 import com.example.android.modeloevento.fragments.FragmentTickets;
@@ -142,6 +143,12 @@ public class BaseActivity extends AppCompatActivity {
                 replaceFragment(fragmentInstagram);
                 navigationView.setCheckedItem(R.id.nav_item_instagram);
                 break;
+
+            case 8:
+                FragmentLoja fragmentLoja = new FragmentLoja();
+                replaceFragment(fragmentLoja);
+                navigationView.setCheckedItem(R.id.nav_item_loja);
+                break;
         }
     }
 
@@ -248,7 +255,8 @@ public class BaseActivity extends AppCompatActivity {
                 break;
 
             case R.id.nav_item_loja:
-                Toast.makeText(this, "Clicou em loja", Toast.LENGTH_SHORT).show();
+                FragmentLoja fragmentLoja = new FragmentLoja();
+                replaceFragment(fragmentLoja);
                 break;
 
             case R.id.nav_item_pontos_de_venda:

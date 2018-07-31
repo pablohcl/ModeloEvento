@@ -21,4 +21,12 @@ public class FragmentLoja extends BaseFragment {
 
         return viewLoja;
     }
+
+    @Override
+    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+        getActivity().setTitle(R.string.loja);
+        getItensLoja();
+        setItensLoja();
+    }
 }
