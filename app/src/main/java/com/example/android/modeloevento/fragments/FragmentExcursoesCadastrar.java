@@ -9,24 +9,24 @@ import android.view.ViewGroup;
 
 import com.example.android.modeloevento.R;
 
-public class FragmentPontosVenda extends BaseFragment {
+public class FragmentExcursoesCadastrar extends BaseFragment {
 
-    public FragmentPontosVenda() {
+    public FragmentExcursoesCadastrar() {
     }
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View viewPontosVenda = inflater.inflate(R.layout.pontos_venda_fragment, container, false);
+        View view = inflater.inflate(R.layout.excursoes_cadastrar_fragment, container, false);
 
-        return viewPontosVenda;
+        return view;
     }
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        getActivity().setTitle(R.string.pontos_de_venda);
+        getActivity().setTitle(R.string.cadastre_sua_excursao);
 
-        setPontosDeVenda();
+
     }
 }

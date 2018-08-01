@@ -7,7 +7,7 @@
     android:layout_height="match_parent">
 
     <ImageView
-        android:id="@+id/imageView25"
+        android:id="@+id/imageView29"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:adjustViewBounds="true"
@@ -18,10 +18,9 @@
         app:srcCompat="@drawable/rodape" />
 
     <ScrollView
-        android:id="@+id/sv_pontos_de_venda"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView25"
+        app:layout_constraintBottom_toTopOf="@+id/imageView29"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -36,7 +35,7 @@
                 android:layout_height="match_parent">
 
                 <TextView
-                    android:id="@+id/tv_titulo_pontos_de_venda"
+                    android:id="@+id/tv_titulo_excursoes_achar"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="8dp"
@@ -49,30 +48,29 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/tv_p1_pontos_de_venda"
+                    android:id="@+id/tv_p1_excursoes_achar"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/tv_titulo_pontos_de_venda"
-                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginEnd="8dp"
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="8dp"
-                    android:layout_marginEnd="8dp"
-                    android:text="TextView" />
+                    android:text="TextView"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_titulo_excursoes_achar" />
 
                 <TextView
-                    android:id="@+id/tv_p2_pontos_de_venda"
+                    android:id="@+id/tv_p2_excursoes_achar"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/tv_p1_pontos_de_venda"
-                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginEnd="8dp"
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="8dp"
-                    android:layout_marginEnd="8dp"
-                    android:text="TextView" />
+                    android:text="TextView"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_p1_excursoes_achar" />
             </android.support.constraint.ConstraintLayout>
         </LinearLayout>
     </ScrollView>
-
 </android.support.constraint.ConstraintLayout>

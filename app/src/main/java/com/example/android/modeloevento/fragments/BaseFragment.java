@@ -4,6 +4,7 @@ package com.example.android.modeloevento.fragments;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.constraint.ConstraintLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
@@ -11,6 +12,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.android.modeloevento.R;
@@ -280,5 +282,17 @@ public class BaseFragment extends Fragment {
                 // DO SOMETHING HERE.
             }
         };
+    }
+
+    protected void setPontosDeVenda(){
+        TextView tvTituloPontosDeVenda, tvP1PontosDeVenda, tvP2PontosDeVenda;
+
+        tvTituloPontosDeVenda = getActivity().findViewById(R.id.tv_titulo_pontos_de_venda);
+        tvP1PontosDeVenda = getActivity().findViewById(R.id.tv_p1_pontos_de_venda);
+        tvP2PontosDeVenda = getActivity().findViewById(R.id.tv_p2_pontos_de_venda);
+
+        tvTituloPontosDeVenda.setText(getActivity().getResources().getString(R.string.titulo_pontos_de_venda));
+        tvP1PontosDeVenda.setText(getActivity().getResources().getString(R.string.p1_pontos_de_venda));
+        tvP2PontosDeVenda.setText(getActivity().getResources().getString(R.string.p2_pontos_de_venda));
     }
 }

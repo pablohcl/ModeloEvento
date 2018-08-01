@@ -26,9 +26,11 @@ import com.example.android.modeloevento.adapter.BotaoAdapter;
 import com.example.android.modeloevento.fragments.FragmentAtracoes;
 import com.example.android.modeloevento.fragments.FragmentEstrutura;
 import com.example.android.modeloevento.fragments.FragmentEvento;
+import com.example.android.modeloevento.fragments.FragmentExcursoes;
 import com.example.android.modeloevento.fragments.FragmentInstagram;
 import com.example.android.modeloevento.fragments.FragmentLoja;
 import com.example.android.modeloevento.fragments.FragmentNews;
+import com.example.android.modeloevento.fragments.FragmentPontosVenda;
 import com.example.android.modeloevento.fragments.FragmentSetores;
 import com.example.android.modeloevento.fragments.FragmentTickets;
 import com.example.android.modeloevento.fragments.FragmentVideos;
@@ -149,6 +151,18 @@ public class BaseActivity extends AppCompatActivity {
                 replaceFragment(fragmentLoja);
                 navigationView.setCheckedItem(R.id.nav_item_loja);
                 break;
+
+            case 9:
+                FragmentPontosVenda fragmentPontosVenda = new FragmentPontosVenda();
+                replaceFragment(fragmentPontosVenda);
+                navigationView.setCheckedItem(R.id.nav_item_pontos_de_venda);
+                break;
+
+            case 10:
+                FragmentExcursoes fragmentExcursoes = new FragmentExcursoes();
+                replaceFragment(fragmentExcursoes);
+                navigationView.setCheckedItem(R.id.nav_item_excursoes);
+                break;
         }
     }
 
@@ -260,11 +274,13 @@ public class BaseActivity extends AppCompatActivity {
                 break;
 
             case R.id.nav_item_pontos_de_venda:
-                Toast.makeText(this, "Clicou em pontos de venda", Toast.LENGTH_SHORT).show();
+                FragmentPontosVenda fragmentPontosVenda = new FragmentPontosVenda();
+                replaceFragment(fragmentPontosVenda);
                 break;
 
             case R.id.nav_item_excursoes:
-                Toast.makeText(this, "Clicou em excursões", Toast.LENGTH_SHORT).show();
+                FragmentExcursoes fragmentExcursoes = new FragmentExcursoes();
+                replaceFragment(fragmentExcursoes);
                 break;
 
             case R.id.nav_item_aniversarios:
