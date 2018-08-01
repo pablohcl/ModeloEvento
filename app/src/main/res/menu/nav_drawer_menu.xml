@@ -67,11 +67,6 @@
             android:title="@string/campanha"
             android:checked="true"/>
         <item
-            android:id="@+id/nav_item_dj_contest"
-            android:icon="@drawable/ic_android_black_48dp"
-            android:title="@string/dj_contest"
-            android:checked="true"/>
-        <item
             android:id="@+id/nav_item_mapa"
             android:icon="@drawable/ic_android_black_48dp"
             android:title="@string/mapa"

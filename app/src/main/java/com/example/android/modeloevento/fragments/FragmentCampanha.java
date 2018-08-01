@@ -21,4 +21,10 @@ public class FragmentCampanha extends BaseFragment {
 
         return viewCampanha;
     }
+
+    @Override
+    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+        getActivity().setTitle(R.string.campanha);
+    }
 }

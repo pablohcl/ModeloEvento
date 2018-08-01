@@ -25,6 +25,7 @@ import com.example.android.modeloevento.adapter.AtracoesAdapter;
 import com.example.android.modeloevento.adapter.BotaoAdapter;
 import com.example.android.modeloevento.fragments.FragmentAniversarios;
 import com.example.android.modeloevento.fragments.FragmentAtracoes;
+import com.example.android.modeloevento.fragments.FragmentCampanha;
 import com.example.android.modeloevento.fragments.FragmentEstrutura;
 import com.example.android.modeloevento.fragments.FragmentEvento;
 import com.example.android.modeloevento.fragments.FragmentExcursoes;
@@ -170,6 +171,12 @@ public class BaseActivity extends AppCompatActivity {
                 replaceFragment(fragmentAniversarios);
                 navigationView.setCheckedItem(R.id.nav_item_aniversarios);
                 break;
+
+            case 12:
+                FragmentCampanha fragmentCampanha = new FragmentCampanha();
+                replaceFragment(fragmentCampanha);
+                navigationView.setCheckedItem(R.id.nav_item_campanha);
+                break;
         }
     }
 
@@ -296,11 +303,8 @@ public class BaseActivity extends AppCompatActivity {
                 break;
 
             case R.id.nav_item_campanha:
-                Toast.makeText(this, "Clicou em campanha", Toast.LENGTH_SHORT).show();
-                break;
-
-            case R.id.nav_item_dj_contest:
-                Toast.makeText(this, "Clicou em dj contest", Toast.LENGTH_SHORT).show();
+                FragmentCampanha fragmentCampanha = new FragmentCampanha();
+                replaceFragment(fragmentCampanha);
                 break;
 
             case R.id.nav_item_mapa:

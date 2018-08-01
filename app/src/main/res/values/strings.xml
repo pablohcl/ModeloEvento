@@ -25,8 +25,7 @@
     <string name="pontos_de_venda">Pontos de Venda</string>
     <string name="excursoes">Excursões</string>
     <string name="aniversarios">Aniversários</string>
-    <string name="campanha">Campanha LIXO ZERO</string>
-    <string name="dj_contest">DJ Contest</string>
+    <string name="campanha">Campanha</string>
     <string name="mapa">Mapa</string>
     <string name="termos_e_condicoes">Termos e Condições</string>
 
@@ -44,7 +43,6 @@
         <item>@string/excursoes</item>
         <item>@string/aniversarios</item>
         <item>@string/campanha</item>
-        <item>@string/dj_contest</item>
         <item>@string/mapa</item>
         <item>@string/termos_e_condicoes</item>
     </string-array>
