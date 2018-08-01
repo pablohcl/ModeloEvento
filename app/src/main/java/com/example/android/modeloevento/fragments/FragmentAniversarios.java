@@ -21,4 +21,10 @@ public class FragmentAniversarios extends BaseFragment {
 
         return viewAniversarios;
     }
+
+    @Override
+    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+        getActivity().setTitle(R.string.aniversarios);
+    }
 }

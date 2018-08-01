@@ -23,6 +23,7 @@ import android.widget.Toast;
 import com.example.android.modeloevento.R;
 import com.example.android.modeloevento.adapter.AtracoesAdapter;
 import com.example.android.modeloevento.adapter.BotaoAdapter;
+import com.example.android.modeloevento.fragments.FragmentAniversarios;
 import com.example.android.modeloevento.fragments.FragmentAtracoes;
 import com.example.android.modeloevento.fragments.FragmentEstrutura;
 import com.example.android.modeloevento.fragments.FragmentEvento;
@@ -163,6 +164,12 @@ public class BaseActivity extends AppCompatActivity {
                 replaceFragment(fragmentExcursoes);
                 navigationView.setCheckedItem(R.id.nav_item_excursoes);
                 break;
+
+            case 11:
+                FragmentAniversarios fragmentAniversarios = new FragmentAniversarios();
+                replaceFragment(fragmentAniversarios);
+                navigationView.setCheckedItem(R.id.nav_item_aniversarios);
+                break;
         }
     }
 
@@ -284,7 +291,8 @@ public class BaseActivity extends AppCompatActivity {
                 break;
 
             case R.id.nav_item_aniversarios:
-                Toast.makeText(this, "Clicou em aniversários", Toast.LENGTH_SHORT).show();
+                FragmentAniversarios fragmentAniversarios = new FragmentAniversarios();
+                replaceFragment(fragmentAniversarios);
                 break;
 
             case R.id.nav_item_campanha:
