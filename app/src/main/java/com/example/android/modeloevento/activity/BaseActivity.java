@@ -77,6 +77,7 @@ public class BaseActivity extends AppCompatActivity {
         actionBar.setDisplayHomeAsUpEnabled(true);
         drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         navigationView = (NavigationView) findViewById(R.id.nav_view);
+        navigationView.setItemIconTintList(null);
         if(navigationView != null && drawerLayout != null){
             // Trata o evento de clique no menu
             navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {

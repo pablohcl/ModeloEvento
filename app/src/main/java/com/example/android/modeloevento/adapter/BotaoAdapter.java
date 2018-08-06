@@ -16,6 +16,8 @@ import java.util.ArrayList;
 
 public class BotaoAdapter extends RecyclerView.Adapter {
 
+    ViewHolder hold;
+
     private Context context;
     private ArrayList<String> strings;
     private final BotaoOnClickListener onClickListener;
@@ -39,11 +41,12 @@ public class BotaoAdapter extends RecyclerView.Adapter {
 
     @Override
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, final int position) {
-        ViewHolder hold = (ViewHolder) holder;
+        hold = (ViewHolder) holder;
         final String result = strings.get(position);
 
         hold.tvNome.setText(result);
-        hold.imgView.setImageResource(R.drawable.ic_android_white_72dp);
+        //hold.imgView.setImageResource(R.drawable.ic_android_white_72dp);
+        setImage(position);
         holder.itemView.setTag(position);
         if(onClickListener != null){
             holder.itemView.setOnClickListener(new View.OnClickListener() {
@@ -53,7 +56,100 @@ public class BotaoAdapter extends RecyclerView.Adapter {
                 }
             });
         }
+    }
 
+    private void setImage(int position){
+        switch(position){
+            case 0:
+                hold.imgView.setImageResource(R.drawable.ic_evento);
+                hold.imgView.setAdjustViewBounds(true);
+                hold.imgView.setPadding(8, 8, 8, 8);
+                break;
+
+            case 1:
+                hold.imgView.setImageResource(R.drawable.ic_dj);
+                hold.imgView.setAdjustViewBounds(true);
+                hold.imgView.setPadding(8, 8, 8, 8);
+                break;
+
+            case 2:
+                hold.imgView.setImageResource(R.drawable.ic_setores);
+                hold.imgView.setAdjustViewBounds(true);
+                hold.imgView.setPadding(8, 8, 8, 8);
+                break;
+
+            case 3:
+                hold.imgView.setImageResource(R.drawable.ic_structure);
+                hold.imgView.setAdjustViewBounds(true);
+                hold.imgView.setPadding(8, 8, 8, 8);
+                break;
+
+            case 4:
+                hold.imgView.setImageResource(R.drawable.ic_tickets);
+                hold.imgView.setAdjustViewBounds(true);
+                hold.imgView.setPadding(8, 8, 8, 8);
+                break;
+
+            case 5:
+                hold.imgView.setImageResource(R.drawable.ic_news);
+                hold.imgView.setAdjustViewBounds(true);
+                hold.imgView.setPadding(8, 8, 8, 8);
+                break;
+
+            case 6:
+                hold.imgView.setImageResource(R.drawable.ic_youtube);
+                hold.imgView.setAdjustViewBounds(true);
+                hold.imgView.setPadding(8, 8, 8, 8);
+                break;
+
+            case 7:
+                hold.imgView.setImageResource(R.drawable.ic_instagram);
+                hold.imgView.setAdjustViewBounds(true);
+                hold.imgView.setPadding(8, 8, 8, 8);
+                break;
+
+            case 8:
+                hold.imgView.setImageResource(R.drawable.ic_store);
+                hold.imgView.setAdjustViewBounds(true);
+                hold.imgView.setPadding(8, 8, 8, 8);
+                break;
+
+            case 9:
+                hold.imgView.setImageResource(R.drawable.ic_ponto_venda);
+                hold.imgView.setAdjustViewBounds(true);
+                hold.imgView.setPadding(8, 8, 8, 8);
+                break;
+
+            case 10:
+                hold.imgView.setImageResource(R.drawable.ic_excursao);
+                hold.imgView.setAdjustViewBounds(true);
+                hold.imgView.setPadding(8, 8, 8, 8);
+                break;
+
+            case 11:
+                hold.imgView.setImageResource(R.drawable.ic_aniversario);
+                hold.imgView.setAdjustViewBounds(true);
+                hold.imgView.setPadding(8, 8, 8, 8);
+                break;
+
+            case 12:
+                hold.imgView.setImageResource(R.drawable.ic_campanha);
+                hold.imgView.setAdjustViewBounds(true);
+                hold.imgView.setPadding(8, 8, 8, 8);
+                break;
+
+            case 13:
+                hold.imgView.setImageResource(R.drawable.ic_map);
+                hold.imgView.setAdjustViewBounds(true);
+                hold.imgView.setPadding(8, 8, 8, 8);
+                break;
+
+            case 14:
+                hold.imgView.setImageResource(R.drawable.ic_termos);
+                hold.imgView.setAdjustViewBounds(true);
+                hold.imgView.setPadding(8, 8, 8, 8);
+                break;
+        }
     }
 
     @Override
