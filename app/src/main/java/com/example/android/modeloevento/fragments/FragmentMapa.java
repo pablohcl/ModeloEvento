@@ -55,8 +55,8 @@ public class FragmentMapa extends BaseFragment implements OnMapReadyCallback {
         gMap = googleMap;
 
         LatLng latLng = new LatLng(-22.951922, -43.210487);
-        gMap.addMarker(new MarkerOptions().position(latLng).title("PARTY HARD!!!").snippet("Join us.").icon(BitmapDescriptorFactory.fromResource(R.drawable.placeholder))).showInfoWindow();
         gMap.setInfoWindowAdapter(new CustomInfoWindowAdapter());
+        gMap.addMarker(new MarkerOptions().position(latLng).title("PARTY HARD!!!").snippet("Join us.").icon(BitmapDescriptorFactory.fromResource(R.drawable.placeholder))).showInfoWindow();
         gMap.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng, 15));
     }
 

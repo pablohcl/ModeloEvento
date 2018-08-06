@@ -17,13 +17,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/cabecalho2" />
+        app:srcCompat="@drawable/cabecalho3" />
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/rv_main"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:background="@drawable/rv_background"
+        android:background="@drawable/mainmenu_background"
         app:layout_constraintBottom_toTopOf="@+id/imageView5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
