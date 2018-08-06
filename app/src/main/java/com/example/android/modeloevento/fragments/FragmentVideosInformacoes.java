@@ -11,6 +11,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.android.modeloevento.Config;
@@ -24,6 +25,10 @@ public class FragmentVideosInformacoes extends BaseFragment {
     // API
     private static final String API_KEY = Config.YOUTUBE_API_KEY;
 
+    private int videoClicado;
+    private TextView tvNomeVideo;
+    private TextView tvDescVideo;
+
     // YoutTube video
     public static String VIDEO_ID = "3PjAbARdYog";
 
@@ -34,6 +39,10 @@ public class FragmentVideosInformacoes extends BaseFragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.videos_informacoes_fragment, container, false);
+
+        videoClicado = getArguments().getInt("video clicado");
+        tvNomeVideo = (TextView) view.findViewById(R.id.tv_nome_video_informacoes);
+        tvDescVideo = (TextView) view.findViewById(R.id.tv_desc_video_informacoes);
 
         return view;
     }
@@ -46,6 +55,11 @@ public class FragmentVideosInformacoes extends BaseFragment {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
+
+        getVideos();
+
+        tvNomeVideo.setText(videos.get(videoClicado));
+        tvDescVideo.setText(descricoesVideos.get(videoClicado));
 
         setHasOptionsMenu(true);
 

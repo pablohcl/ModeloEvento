@@ -31,12 +31,20 @@ import com.example.android.modeloevento.fragments.FragmentEvento;
 import com.example.android.modeloevento.fragments.FragmentExcursoes;
 import com.example.android.modeloevento.fragments.FragmentInstagram;
 import com.example.android.modeloevento.fragments.FragmentLoja;
+import com.example.android.modeloevento.fragments.FragmentMapa;
 import com.example.android.modeloevento.fragments.FragmentNews;
 import com.example.android.modeloevento.fragments.FragmentPontosVenda;
 import com.example.android.modeloevento.fragments.FragmentSetores;
 import com.example.android.modeloevento.fragments.FragmentTickets;
 import com.example.android.modeloevento.fragments.FragmentVideos;
 import com.example.android.modeloevento.fragments.FragmentVideosInformacoes;
+import com.google.android.gms.maps.CameraUpdate;
+import com.google.android.gms.maps.CameraUpdateFactory;
+import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.OnMapReadyCallback;
+import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.youtube.player.YouTubeBaseActivity;
 
 import java.util.ArrayList;
@@ -51,6 +59,8 @@ public class BaseActivity extends AppCompatActivity {
     public FragmentManager fragmentManager;
     public FragmentTransaction fragmentTransaction;
     private Toolbar toolbar;
+
+
 
     protected void setUpToolbar(){
         toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -176,6 +186,12 @@ public class BaseActivity extends AppCompatActivity {
                 FragmentCampanha fragmentCampanha = new FragmentCampanha();
                 replaceFragment(fragmentCampanha);
                 navigationView.setCheckedItem(R.id.nav_item_campanha);
+                break;
+
+            case 13:
+                FragmentMapa fragmentMapa = new FragmentMapa();
+                replaceFragment(fragmentMapa);
+                navigationView.setCheckedItem(R.id.nav_item_mapa);
                 break;
         }
     }
@@ -308,7 +324,8 @@ public class BaseActivity extends AppCompatActivity {
                 break;
 
             case R.id.nav_item_mapa:
-                Toast.makeText(this, "Clicou em mapa", Toast.LENGTH_SHORT).show();
+                FragmentMapa fragmentMapa = new FragmentMapa();
+                replaceFragment(fragmentMapa);
                 break;
 
             case R.id.nav_item_termos_e_condicoes:

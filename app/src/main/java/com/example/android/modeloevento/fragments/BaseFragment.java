@@ -246,6 +246,9 @@ public class BaseFragment extends Fragment {
             public void onClickVideos(View view, int position) {
                 FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
                 FragmentVideosInformacoes fragmentVideosInformacoes = new FragmentVideosInformacoes();
+                Bundle bundle = new Bundle();
+                bundle.putInt("video clicado", position);
+                fragmentVideosInformacoes.setArguments(bundle);
                 ft.replace(R.id.frag_layout, fragmentVideosInformacoes, "FRAG VIDEOS INFORMACOES");
                 ft.addToBackStack(null);
                 ft.commit();

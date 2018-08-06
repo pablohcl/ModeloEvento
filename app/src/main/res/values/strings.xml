@@ -46,4 +46,7 @@
         <item>@string/mapa</item>
         <item>@string/termos_e_condicoes</item>
     </string-array>
+
+    <string name="googlemaps_key">AIzaSyDB4g13zjAOtbWNYE6EsM_zqcmX4edi2nc</string>
+    <integer name="google_play_version">49</integer>
 </resources>
