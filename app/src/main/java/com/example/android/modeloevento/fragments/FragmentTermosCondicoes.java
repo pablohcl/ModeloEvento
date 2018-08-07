@@ -21,4 +21,10 @@ public class FragmentTermosCondicoes extends BaseFragment {
 
         return viewTermosCondicoes;
     }
+
+    @Override
+    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+        getActivity().setTitle(R.string.termos_e_condicoes);
+    }
 }

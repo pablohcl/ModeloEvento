@@ -24,7 +24,6 @@ public class FragmentExcursoes extends BaseFragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View viewExcursoes = inflater.inflate(R.layout.excursoes_fragment, container, false);
-        linha1 = (ConstraintLayout) viewExcursoes.findViewById(R.id.layout_ache_excursao);
         linha2 = (ConstraintLayout) viewExcursoes.findViewById(R.id.layout_cadastre_excursao);
         return viewExcursoes;
     }
@@ -33,17 +32,6 @@ public class FragmentExcursoes extends BaseFragment {
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         getActivity().setTitle(R.string.excursoes);
-
-        linha1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                android.support.v4.app.FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
-                FragmentExcursoesAchar fragmentExcursoesAchar = new FragmentExcursoesAchar();
-                ft.replace(R.id.frag_layout, fragmentExcursoesAchar, "FRAG EXCURSOES ACHAR");
-                ft.addToBackStack(null);
-                ft.commit();
-            }
-        });
 
         linha2.setOnClickListener(new View.OnClickListener() {
             @Override

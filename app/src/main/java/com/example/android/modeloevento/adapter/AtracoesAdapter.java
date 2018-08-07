@@ -2,6 +2,7 @@ package com.example.android.modeloevento.adapter;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
+import android.support.v7.widget.AppCompatImageView;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -43,6 +44,7 @@ public class AtracoesAdapter extends RecyclerView.Adapter {
 
         holderAtracoes.tvNome.setText(artistas.get(position));
         holderAtracoes.tvDesc.setText(descricoes.get(position));
+        holderAtracoes.imgView.setImageResource(R.drawable.ic_dj);
         holder.itemView.setTag(position);
         if(onClickListener != null){
             holder.itemView.setOnClickListener(new View.OnClickListener() {
@@ -63,11 +65,13 @@ public class AtracoesAdapter extends RecyclerView.Adapter {
 
         final TextView tvNome;
         final TextView tvDesc;
+        final AppCompatImageView imgView;
 
         public HolderAtracoes(View v){
             super(v);
             tvNome = (TextView) v.findViewById(R.id.tv_nome_linha_atracoes);
             tvDesc = (TextView) v.findViewById(R.id.tv_desc_linha_atracoes);
+            imgView = (AppCompatImageView) v.findViewById(R.id.imgview_linha_atracoes);
         }
     }
 }

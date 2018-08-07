@@ -35,6 +35,7 @@ import com.example.android.modeloevento.fragments.FragmentMapa;
 import com.example.android.modeloevento.fragments.FragmentNews;
 import com.example.android.modeloevento.fragments.FragmentPontosVenda;
 import com.example.android.modeloevento.fragments.FragmentSetores;
+import com.example.android.modeloevento.fragments.FragmentTermosCondicoes;
 import com.example.android.modeloevento.fragments.FragmentTickets;
 import com.example.android.modeloevento.fragments.FragmentVideos;
 import com.example.android.modeloevento.fragments.FragmentVideosInformacoes;
@@ -194,6 +195,12 @@ public class BaseActivity extends AppCompatActivity {
                 replaceFragment(fragmentMapa);
                 navigationView.setCheckedItem(R.id.nav_item_mapa);
                 break;
+
+            case 14:
+                FragmentTermosCondicoes fragmentTermosCondicoes = new FragmentTermosCondicoes();
+                replaceFragment(fragmentTermosCondicoes);
+                navigationView.setCheckedItem(R.id.nav_item_termos_e_condicoes);
+                break;
         }
     }
 
@@ -205,9 +212,6 @@ public class BaseActivity extends AppCompatActivity {
             stringsList.add(strings[i]);
         }
     }
-
-
-
 
     public boolean onOptionsItemSelected(MenuItem item){
         switch(item.getItemId()){
@@ -330,7 +334,8 @@ public class BaseActivity extends AppCompatActivity {
                 break;
 
             case R.id.nav_item_termos_e_condicoes:
-                Toast.makeText(this, "Clicou em termos e condições", Toast.LENGTH_SHORT).show();
+                FragmentTermosCondicoes fragmentTermosCondicoes = new FragmentTermosCondicoes();
+                replaceFragment(fragmentTermosCondicoes);
                 break;
         }
     }

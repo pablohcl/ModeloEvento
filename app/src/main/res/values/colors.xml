@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3f51b5</color>
+    <color name="colorPrimary">#311B92</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+    <color name="old_primary">#3f51b5</color>
+
+    <color name="meu_laranja">#B7092B</color>
 
     <!--reds-->
     <color name="md_red_50">#FFEBEE</color>
