@@ -46,7 +46,7 @@ public class FragmentInstagram extends BaseFragment {
 
         webView.clearCache(true);
         webView.getSettings().setJavaScriptEnabled(true);
-        webView.loadUrl("https://www.instagram.com/aztec.festival/");
+        webView.loadUrl("https://www.instagram.com/google/");
         webView.setWebViewClient(new WebViewClient(){
             @Override
             public void onPageStarted(WebView view, String url, Bitmap favicon) {

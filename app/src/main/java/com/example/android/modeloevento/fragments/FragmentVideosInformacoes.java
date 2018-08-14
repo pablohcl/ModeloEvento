@@ -30,7 +30,7 @@ public class FragmentVideosInformacoes extends BaseFragment {
     private TextView tvDescVideo;
 
     // YoutTube video
-    public static String VIDEO_ID = "3PjAbARdYog";
+    public static String VIDEO_ID = "XW0tPwRu5IY";
 
     public FragmentVideosInformacoes() {
     }
