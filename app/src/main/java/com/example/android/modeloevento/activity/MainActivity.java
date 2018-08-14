@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.Toast;
 
@@ -18,14 +20,14 @@ import java.util.ArrayList;
 public class MainActivity extends BaseActivity {
 
     private ImageView imgView;
-    private RecyclerView recyclerView;
+    private GridView recyclerView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        recyclerView = (RecyclerView) findViewById(R.id.rv_main);
+        recyclerView = (GridView) findViewById(R.id.rv_main);
         imgView = (ImageView) findViewById(R.id.imageView);
 
         preencherLista();
@@ -34,23 +36,19 @@ public class MainActivity extends BaseActivity {
 
     // Setando o adapter e mostrando o conteudo
     protected void mostrarConteudo(){
-        adapter = new BotaoAdapter(getBaseContext(), stringsList, onClickBotao());
+        adapter = new BotaoAdapter(getBaseContext(), stringsList);
         recyclerView.setAdapter(adapter);
-        recyclerView.setHasFixedSize(true);
-        recyclerView.setLayoutManager(new GridLayoutManager(this, 4));
-    }
-    protected BotaoAdapter.BotaoOnClickListener onClickBotao(){
-        return new BotaoAdapter.BotaoOnClickListener() {
+        recyclerView.setNumColumns(4);
+        recyclerView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onClickBotao(View view, int position) {
-                preencherLista();
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent intent = new Intent(getContext(), SegundaActivity.class);
                 Bundle bundle = new Bundle();
                 bundle.putInt("item_clicado", position);
                 intent.putExtras(bundle);
                 startActivity(intent);
             }
-        };
+        });
     }
 
     private Context getContext(){

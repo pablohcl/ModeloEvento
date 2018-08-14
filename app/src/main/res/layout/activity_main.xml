@@ -17,32 +17,31 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/cabecalho3" />
+        app:srcCompat="@drawable/topo" />
 
-    <android.support.v7.widget.RecyclerView
+    <GridView
         android:id="@+id/rv_main"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:background="@drawable/mainmenu_background"
-        app:layout_constraintBottom_toTopOf="@+id/imageView5"
+        android:background="@drawable/meio"
+        android:paddingTop="58dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView10"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView">
 
-    </android.support.v7.widget.RecyclerView>
+    </GridView>
 
     <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="match_parent"
+        android:id="@+id/imageView10"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_margin="0dp"
         android:adjustViewBounds="true"
-        android:padding="0dp"
         android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/rodape" />
+        app:srcCompat="@drawable/rodape_main" />
 
 </android.support.constraint.ConstraintLayout>
